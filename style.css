@@ -22,9 +22,6 @@ h1{
   float :left;
 }
 
-title{
-  color:aquamarine;
-}
 
 #text-tab{
   display :flex;
