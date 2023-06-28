@@ -1,3 +1,7 @@
+.bookinginfo{
+  background-color :white;
+}
+
 .corps{
   background-color :white;
 }
@@ -11,12 +15,14 @@
 body{
   background-color: whitesmoke;
 }
-
+h1{
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  float: left;
+}
 .text-tab{
   display: flex;
   flex-direction: row;
   gap: 25px;
 }
-
-
- 
