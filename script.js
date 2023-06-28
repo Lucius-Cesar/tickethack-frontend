@@ -1,16 +1,17 @@
-function parseTripRow(departure, arrival, date, price){
+function parseTripRow(departure, arrival, date, price, id){
     return `<div class="row" id = "${id}">
     ${departure} > ${arrival}   ${date}    ${price}€ <button id = "book"> book </button>
     </div>`
 }
 
 function bookTrip(){
-    document.querySelectorAll("book").foreach(bookbtn =>
+    document.querySelectorAll("#book").forEach(bookbtn =>
         bookbtn.addEventListener("click", () => {
+            console.log(bookbtn)
             fetch('http://localhost:3000/myCart/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ tripId: bookbtn.parentNode.id}),
+            body: JSON.stringify({ tripId: bookbtn.parentNode.id }),
             }).then(window.location.assign("cart.html"))
         })
     )
@@ -26,11 +27,10 @@ function searchTrip(){
         .then(response => response.json())
         .then(data => {
                 if(data.trip.length){
-                    console.log(data.trip)
+                    document.querySelector("#imagetrain").remove()
                     data.trip.forEach(trip => {
-                        document.querySelector("#result").innerHTML += parseTripRow(trip.departure, trip.arrival, trip.date, trip.price)
-                    }
-                    )
+                        document.querySelector("#result").innerHTML += parseTripRow(trip.departure, trip.arrival, trip.date, trip.price, trip._id)
+                    })
                     bookTrip()
                 }
                 else{
