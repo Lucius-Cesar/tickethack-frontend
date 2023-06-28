@@ -3,8 +3,9 @@
 #header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
+    padding: 12px;
 }
 
 body{
@@ -12,6 +13,28 @@ body{
     background-size: cover;
     padding: 0;
     margin : 0;
+}
+
+h1{
+  display:flex;
+  width :100vw;
+  flex-direction: row;
+  float :left;
+}
+
+title{
+  color:aquamarine;
+}
+
+#text-tab{
+  display :flex;
+  flex-direction: row;
+  gap: 25px
+}
+
+#sloggan1{
+  display: flex;
+  text-align: center;
 }
 
 #content{
@@ -25,10 +48,12 @@ body{
 .block {
   display: flex;
   height: 300px;
-  width: 200px;
+  width: 250px;
   flex-direction: column;
   background-color: aliceblue;
   margin: 0 50px;
+  border-radius:15px;
+  padding: 12px;
 }
 
 #departure{
@@ -38,9 +63,11 @@ body{
 
 #date{
   display:flex;
-  margin-top: 20%;
+  margin-top: 20px;
 }
  #search{
   display: flex;
   margin-top: 60%;
+  border-radius: 10%;
+  background-color: aquamarine;
  }
