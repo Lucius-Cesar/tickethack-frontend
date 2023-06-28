@@ -1,0 +1,14 @@
+.corps{
+  background-color :white;
+}
+#header{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body{
+  background-color: whitesmoke;
+}
+
+ 
