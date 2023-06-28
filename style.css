@@ -1,24 +1,46 @@
 
 
-  #header{
+#header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
-  }
+}
 
-  body{
+body{
     background-image: url("images/background.jpg");
     background-size: cover;
     padding: 0;
     margin : 0;
 }
 
-.reservation{
+#content{
   display :flex;
-  flex-direction :column;
-  background-color: aliceblue;
-  height: ;
-  width: ;
+  width: 100vw;
+  flex-direction :row;
+  align-items: center;
+  justify-content: center;
 }
 
+.block {
+  display: flex;
+  height: 300px;
+  width: 200px;
+  flex-direction: column;
+  background-color: aliceblue;
+  margin: 0 50px;
+}
+
+#departure{
+  display: flex;
+  margin-top :15%;
+}
+
+#date{
+  display:flex;
+  margin-top: 20%;
+}
+ #search{
+  display: flex;
+  margin-top: 60%;
+ }
