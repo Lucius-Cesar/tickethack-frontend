@@ -14,14 +14,9 @@ body{
     padding: 0;
     margin : 0;
 }
-
-h1{
-  display:flex;
-  width :100vw;
-  flex-direction: row;
-  float :left;
+#logo {
+  color :darkseagreen
 }
-
 
 #text-tab{
   display :flex;
@@ -29,9 +24,9 @@ h1{
   gap: 25px
 }
 
-#sloggan1{
-  display: flex;
+#sloggan1, #sloggan2{
   text-align: center;
+  color: #ffffff;
 }
 
 #content{
@@ -63,8 +58,10 @@ h1{
   margin-top: 20px;
 }
  #search{
-  display: flex;
-  margin-top: 60%;
-  border-radius: 10%;
-  background-color: aquamarine;
+  margin-top: 100px;
+  border-radius: 10px;
+  background-color: darkseagreen;
+  border: 0px;
+  text-align: center;
+  padding: 12px;
  }
